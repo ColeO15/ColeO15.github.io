@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cole Ohlms — Links</title>
+<meta name="description" content="Cole Ohlms — Information Systems senior at Arkansas, AI architecture intern at McCarthy. LinkedIn, GitHub, resume, and contact.">
+<style>
+  :root{
+    --bg:#FBF9F5;
+    --ink:#1A1815;
+    --muted:#6E6862;
+    --rule:#E3DED5;
+    --accent:#B4471F;
+    --card:#FFFFFF;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.5;
+    padding:40px 20px 48px;
+    display:flex;
+    justify-content:center;
+  }
+  .card{width:100%;max-width:400px}
+
+  /* ---------- identity ---------- */
+  .monogram{
+    width:64px;height:64px;margin:0 auto 18px;
+    border:1.5px solid var(--accent);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--serif);font-size:23px;color:var(--accent);
+    letter-spacing:.02em;
+  }
+  h1{
+    font-family:var(--serif);font-weight:400;font-size:27px;
+    text-align:center;letter-spacing:-.01em;margin-bottom:8px;
+  }
+  .tagline{
+    text-align:center;font-size:14.5px;color:var(--muted);
+    margin-bottom:6px;line-height:1.5;
+  }
+  .tagline b{color:var(--ink);font-weight:600}
+  .locale{
+    text-align:center;font-family:var(--mono);font-size:11px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:30px;
+  }
+
+  /* ---------- link buttons ---------- */
+  a.link{
+    display:flex;align-items:center;gap:13px;
+    min-height:58px;padding:12px 16px;margin-bottom:11px;
+    background:var(--card);border:1px solid var(--rule);border-radius:9px;
+    text-decoration:none;color:var(--ink);
+  }
+  a.link:hover{border-color:var(--accent)}
+  a.link:active{background:#F5F1EA}
+
+  .glyph{
+    flex:0 0 32px;height:32px;border-radius:6px;
+    background:#F3EEE5;color:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:13px;font-weight:700;
+  }
+  .txt{flex:1;min-width:0}
+  .txt .t{font-size:15.5px;font-weight:600;line-height:1.3}
+  .txt .s{font-size:12.5px;color:var(--muted);line-height:1.35}
+  .chev{color:var(--rule);font-size:17px;flex:0 0 auto}
+  a.link:hover .chev{color:var(--accent)}
+
+  .primary{border-color:var(--ink)}
+
+  footer{
+    margin-top:28px;text-align:center;
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="monogram">CO</div>
+  <h1>Cole Ohlms</h1>
+  <p class="tagline">
+    <b>Information Systems senior</b> at Arkansas &middot;
+    AI architecture intern at McCarthy &middot; C#, .NET, SQL Server
+  </p>
+  <div class="locale">St. Louis, MO</div>
+
+  <a class="link primary" href="https://coleo15.github.io">
+    <span class="glyph">&#9632;</span>
+    <span class="txt">
+      <span class="t">Portfolio</span>
+      <span class="s">What I built this summer</span>
+    </span>
+    <span class="chev">&rsaquo;</span>
+  </a>
+
+  <a class="link" href="https://www.linkedin.com/in/cole-ohlms">
+    <span class="glyph">in</span>
+    <span class="txt">
+      <span class="t">LinkedIn</span>
+      <span class="s">in/cole-ohlms</span>
+    </span>
+    <span class="chev">&rsaquo;</span>
+  </a>
+
+  <a class="link" href="https://github.com/ColeO15">
+    <span class="glyph">&lt;&gt;</span>
+    <span class="txt">
+      <span class="t">GitHub</span>
+      <span class="s">ColeO15</span>
+    </span>
+    <span class="chev">&rsaquo;</span>
+  </a>
+
+  <a class="link" href="mailto:coleohlms1515@gmail.com">
+    <span class="glyph">@</span>
+    <span class="txt">
+      <span class="t">Email</span>
+      <span class="s">coleohlms1515@gmail.com</span>
+    </span>
+    <span class="chev">&rsaquo;</span>
+  </a>
+
+  <a class="link" href="../resume.pdf">
+    <span class="glyph">PDF</span>
+    <span class="txt">
+      <span class="t">Resume</span>
+      <span class="s">One page, current</span>
+    </span>
+    <span class="chev">&rsaquo;</span>
+  </a>
+
+  <footer>coleo15.github.io</footer>
+
+</div>
+</body>
+</html>
