@@ -1,1 +1,248 @@
-<h1>Cole Ohlms</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colton "Cole" Ohlms — Information Systems</title>
+<meta name="description" content="Information Systems senior at the University of Arkansas. Summer 2026 on the AI architecture team in Corporate IT at McCarthy. Builds in C#, .NET, and SQL Server.">
+<style>
+  :root{
+    --bg:#FBF9F5;
+    --ink:#1A1815;
+    --muted:#6E6862;
+    --rule:#E3DED5;
+    --accent:#B4471F;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    padding:0 20px;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:36px 0 72px}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;justify-content:space-between;align-items:baseline;
+    gap:16px;flex-wrap:wrap;
+    padding-bottom:28px;
+  }
+  .wordmark{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink);
+  }
+  .topbar nav{display:flex;gap:18px}
+  .topbar nav a{
+    font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted);text-decoration:none;
+  }
+  .topbar nav a:hover{color:var(--accent)}
+
+  /* ---------- hero ---------- */
+  .eyebrow{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:18px;
+  }
+  h1{
+    font-family:var(--serif);
+    font-size:clamp(34px,8.5vw,52px);
+    line-height:1.08;
+    letter-spacing:-.02em;
+    font-weight:400;
+    margin-bottom:22px;
+  }
+  .lede{font-size:17px;color:var(--ink);max-width:56ch}
+  .lede strong{font-weight:600}
+
+  .facts{
+    margin-top:24px;padding-top:20px;border-top:1px solid var(--rule);
+    font-size:14px;color:var(--muted);
+  }
+  .facts b{color:var(--ink);font-weight:600}
+
+  /* ---------- sections ---------- */
+  section{margin-top:52px}
+  .label{
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);
+    padding-bottom:10px;margin-bottom:24px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .role-head{margin-bottom:4px}
+  .role{font-family:var(--serif);font-size:21px;font-weight:400}
+  .org{color:var(--accent);font-weight:600}
+  .meta{font-size:13px;color:var(--muted);font-family:var(--mono);margin-bottom:14px}
+
+  ul.points{list-style:none}
+  ul.points li{
+    position:relative;padding-left:18px;margin-bottom:11px;font-size:15.5px;
+  }
+  ul.points li::before{
+    content:"";position:absolute;left:0;top:11px;
+    width:6px;height:1px;background:var(--accent);
+  }
+
+  .earlier{
+    margin-top:26px;padding-top:18px;border-top:1px solid var(--rule);
+    font-size:14px;color:var(--muted);line-height:1.7;
+  }
+  .earlier b{color:var(--ink);font-weight:600;display:block;margin-bottom:6px}
+  .earlier span{color:var(--ink)}
+
+  /* ---------- stack ---------- */
+  .stack-group{margin-bottom:18px}
+  .stack-group h3{
+    font-size:12px;font-weight:600;color:var(--muted);
+    text-transform:uppercase;letter-spacing:.06em;margin-bottom:9px;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{
+    font-family:var(--mono);font-size:12.5px;
+    border:1px solid var(--rule);border-radius:3px;
+    padding:5px 10px;background:#fff;
+  }
+
+  /* ---------- education ---------- */
+  .edu-school{font-family:var(--serif);font-size:19px;margin-bottom:2px}
+  .edu-line{font-size:14.5px;color:var(--muted);margin-bottom:3px}
+  .edu-line b{color:var(--ink);font-weight:600}
+
+  /* ---------- contact ---------- */
+  .cta{
+    font-family:var(--serif);font-size:clamp(26px,6.5vw,34px);
+    line-height:1.15;font-weight:400;margin-bottom:20px;
+  }
+  .links{display:flex;flex-wrap:wrap;gap:10px 22px}
+  .links a{
+    color:var(--ink);font-size:15px;
+    text-decoration:none;border-bottom:1px solid var(--accent);
+    padding-bottom:2px;
+  }
+  .links a:hover{color:var(--accent)}
+
+  footer{
+    margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);
+    font-family:var(--mono);font-size:11px;letter-spacing:.06em;
+    color:var(--muted);display:flex;justify-content:space-between;
+    gap:12px;flex-wrap:wrap;
+  }
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="wordmark">Colton &ldquo;Cole&rdquo; Ohlms</div>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+      <a href="links/">Links</a>
+    </nav>
+  </div>
+
+  <header>
+    <div class="eyebrow">Information Systems &middot; Emerging Technologies</div>
+    <h1>Building in C#,<br>.NET, and SQL&nbsp;Server.</h1>
+    <p class="lede">
+      This summer I worked on the <strong>AI architecture team in Corporate IT at
+      McCarthy</strong>, a multi-billion-dollar national construction firm, building
+      internal applications and deploying AI agents. I&rsquo;m an Information Systems
+      senior at the Walton College of Business.
+    </p>
+    <div class="facts">
+      <b>BSBA, Information Systems</b> &middot; University of Arkansas &middot;
+      <b>Graduating May 2027</b> &middot; St. Louis, MO
+    </div>
+  </header>
+
+  <section id="experience">
+    <div class="label">Experience</div>
+
+    <div class="role-head">
+      <span class="role">IT / AI Intern</span>
+      <span class="org">&mdash; McCarthy Building Companies</span>
+    </div>
+    <div class="meta">Corporate IT, AI Architecture &middot; St. Louis, MO &middot; May&ndash;July 2026</div>
+
+    <ul class="points">
+      <li>Built internal applications in <strong>Palantir Foundry</strong> to structure a
+          product idea pipeline, giving visibility and traceability to how ideas move
+          toward execution.</li>
+      <li>Built and deployed AI agents in <strong>Glean</strong>, including an agent demo
+          with tool-calling and a <strong>Streamlit</strong> interface.</li>
+      <li>Laid the groundwork for an AI-based effort estimation tool to forecast project
+          scope and resource needs.</li>
+      <li>Delivered the closeout presentation to the Engineering &amp; Intelligence team,
+          translating technical results for both technical and business stakeholders.</li>
+    </ul>
+
+    <div class="earlier">
+      <b>Earlier work &mdash; continuous since 2021</b>
+      <span>Mover &amp; Packer, Joe&rsquo;s Schmoes</span> (Aug 2024&ndash;Aug 2026) &middot;
+      <span>Seasonal Porter, Elco Chevrolet</span> (Dec 2025&ndash;Jan 2026) &middot;
+      <span>Warehouse Specialist, Face and Body Shoppe</span> (Jul 2021&ndash;Jan 2023) &middot;
+      <span>Food Runner, TopGolf</span> (Jan&ndash;Jun 2021)
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="label">Technical Stack</div>
+
+    <div class="stack-group">
+      <h3>Languages &amp; frameworks</h3>
+      <div class="chips">
+        <span class="chip">C#</span>
+        <span class="chip">.NET</span>
+        <span class="chip">ASP.NET</span>
+        <span class="chip">SQL Server</span>
+      </div>
+    </div>
+
+    <div class="stack-group">
+      <h3>AI &amp; platforms</h3>
+      <div class="chips">
+        <span class="chip">Palantir Foundry</span>
+        <span class="chip">Glean</span>
+        <span class="chip">LLM tool-calling</span>
+        <span class="chip">Streamlit</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="label">Education</div>
+    <div class="edu-school">University of Arkansas &mdash; Sam M. Walton College of Business</div>
+    <div class="edu-line"><b>BSBA, Information Systems</b> &middot; Emerging Technologies concentration &middot; GPA 3.5</div>
+    <div class="edu-line">Expected May 2027 &middot; Fayetteville, AR</div>
+    <div class="edu-line">Lambda Chi Alpha &middot; Volunteer, Treehouse Pantry (Springdale, AR)</div>
+  </section>
+
+  <section id="contact">
+    <div class="label">Get in touch</div>
+    <p class="cta">Let&rsquo;s talk about building useful systems.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/cole-ohlms">LinkedIn</a>
+      <a href="https://github.com/ColeO15">GitHub</a>
+      <a href="mailto:coleohlms1515@gmail.com">Email</a>
+      <a href="links/">All links</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Colton Ohlms</span>
+    <span><a href="links/">coleo15.github.io/links</a></span>
+  </footer>
+
+</div>
+</body>
+</html>
